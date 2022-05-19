@@ -1,6 +1,6 @@
-<!-- <?php
+<?php
     session_start();
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,27 +17,29 @@
             <form action="./backend/authorization.php" method="POST">
                 <h2>Войти</h2>
                 <div class="mb-3">
-                    <label for="username" class="form-label">Логин</label>
-                    <input type="text" class="form-control" name="username" id="username">
+                    <label for="logUsername" class="form-label">Логин</label>
+                    <input type="text" class="form-control" name="username" id="logUsername">
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" name="password" id="password">
+                    <label for="logPassword" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" name="password" id="logPassword">
                 </div>
+                <input type="text" name="type" value="log" style="display: none;">
                 <button type="submit" class="btn btn-primary">Войти</button>
             </form>
         </div>
         <div class="card card-body flex-grow-0" style="width: 400px;">
-            <form action="./backend/authorization.php" method="POST">
+            <form action="./backend/authorization.php" method="POST" type="reg">
                 <h2>Зарегистрироваться</h2>
                 <div class="mb-3">
-                    <label for="username" class="form-label">Логин</label>
-                    <input type="text" class="form-control" name="username" id="username">
+                    <label for="regUsername" class="form-label">Логин</label>
+                    <input type="text" class="form-control" name="username" id="regUsername">
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" name="password" id="password">
+                    <label for="regPassword" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" name="password" id="regPassword">
                 </div>
+                <input type="text" name="type" value="reg" style="display: none;">
                 <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
             </form>
         </div>
