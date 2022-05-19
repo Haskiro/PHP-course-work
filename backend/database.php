@@ -20,17 +20,6 @@ function sql_query($sql) {
     return $result;
 }
 
-function print_result($result) {
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            print_r($row);
-            echo 'br';
-        }
-    } else {
-        echo '0 results';
-    }
-}
-
 function add_quotes($str) {
     return '\'' . $str . '\'';
 }

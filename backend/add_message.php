@@ -28,7 +28,6 @@ if ($fieldsTable->num_rows == 1) {
     }
 }
 
-// print_r('INSERT INTO SMS (`id`,`hashtag_id`,`Data`,`fields_id`) VALUES (NULL,' . add_quotes($hashtagId) . ',' . add_quotes($message) . ',' . add_quotes($fieldId) . ')');
 
 if ($message != '') {
     sql_query('INSERT INTO SMS (`id`,`hashtag_id`,`Data`,`fields_id`) VALUES (NULL,' . add_quotes($hashtagId) . ',' . add_quotes($message) . ',' . add_quotes($fieldId) . ')');
