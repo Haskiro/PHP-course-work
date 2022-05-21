@@ -1,10 +1,10 @@
 <?php
 
 function connect_db() {
-    $host = 'localhost';
-    $user = 'root';
-    $db = 'PHP-course-work';
-    $pass = 'root';
+    $host = 'std-mysql';
+    $user = 'std_1723_php_course_work';
+    $db = 'std_1723_php_course_work';
+    $pass = 'examplepass';
 
     $my_db = new mysqli($host, $user, $pass, $db);
     if ($my_db->connect_error) {
