@@ -64,8 +64,8 @@
                 <?php
                     $messages = getTableMessages();
                     while($row = $messages->fetch_assoc()) {
-                        $title = sql_query('SELECT title FROM `PHP-course-work`.`Fields` WHERE `id` =' . $row['fields_id'])->fetch_assoc()['title'];
-                        $subtitle = sql_query('SELECT name FROM `PHP-course-work`.`hashtags` WHERE `id` =' . $row['hashtag_id'])->fetch_assoc()['name'];
+                        $title = sql_query('SELECT title FROM `std_1723_php_course_work`.`Fields` WHERE `id` =' . $row['fields_id'])->fetch_assoc()['title'];
+                        $subtitle = sql_query('SELECT name FROM `std_1723_php_course_work`.`hashtags` WHERE `id` =' . $row['hashtag_id'])->fetch_assoc()['name'];
                         $text = $row['Data'];
                         ?> 
                         <div class="col-4 mb-3">
