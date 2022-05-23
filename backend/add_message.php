@@ -4,7 +4,7 @@ include_once 'database.php';
 include 'get_data.php';
 
 $message = $_POST['message'];
-$hashtag = $_POST['hashtag'];
+$hashtag = '#' . $_POST['hashtag'];
 $field = $_POST['field'];
 
 if (!in_array($hashtag, $_SESSION['hashtag'])) {
