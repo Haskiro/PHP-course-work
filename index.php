@@ -15,7 +15,7 @@
     <div class="container justify-content-center align-items-center d-flex gap-4 min-vh-100">
         <div class="card card-body flex-grow-0" style="width: 400px;">
             <form action="./backend/authorization.php" method="POST">
-                <h2>Войти</h2>
+                <h2>Вход</h2>
                 <div class="mb-3">
                     <label for="logUsername" class="form-label">Логин</label>
                     <input type="text" class="form-control" name="username" id="logUsername">
@@ -30,7 +30,7 @@
         </div>
         <div class="card card-body flex-grow-0" style="width: 400px;">
             <form action="./backend/authorization.php" method="POST" type="reg">
-                <h2>Зарегистрироваться</h2>
+                <h2>Регистрация</h2>
                 <div class="mb-3">
                     <label for="regUsername" class="form-label">Логин</label>
                     <input type="text" class="form-control" name="username" id="regUsername">
